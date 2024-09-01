@@ -1,0 +1,37 @@
+{
+  "name": "e-commerce-shop",
+  "version": "1.0.0",
+  "description": "MERN SHOPPING CART",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnujaOswal/E-commerce-Shop.git"
+  },
+  "author": "AnujaOswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnujaOswal/E-commerce-Shop/issues"
+  },
+  "homepage": "https://github.com/AnujaOswal/E-commerce-Shop#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.2.10"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
